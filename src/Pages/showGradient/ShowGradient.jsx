@@ -7,7 +7,7 @@ const ShowGradient = ({Val1,Val2,Val3,BackColor}) => {
     <>
       <GradientContainer>
         <Gradient Background={BackColor}>
-          <Marker value1={Val1} value2={Val2} value3={Val3} />
+          <Marker value1={Val1+'%'} value2={Val2+'%'} value3={Val3+'%'} />
         </Gradient>
       </GradientContainer>
     </>

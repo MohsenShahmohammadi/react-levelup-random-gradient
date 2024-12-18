@@ -18,7 +18,7 @@ export const GroupData = styled.div`
 export const ColorShow = styled.div`
   width: 50px;
   height: 30px;
-  background-color: ${(props)=>props.Background};
+  background: ${(props)=>props.Background};
   border: 2px solid yellow;
   border-radius: 5px;
   margin-left: 10px;
@@ -29,10 +29,10 @@ export const ColorInput = styled.input`
   padding: 7px 10px;
   margin: 0 10px;
 `;
-export const ValueInput = styled.input`
+export const ValueInput = styled.input.attrs({type:'number',min:0,max:100})`
   border: 1px solid black;
   border-radius: 5px;
   padding: 7px 10px;
-  width: 30px;
+  width: 40px;
   font-size: 0.8rem;
 `;

@@ -51,12 +51,29 @@ export const ButtonGradient = styled.button`
   background-color: darkcyan;
   color: white;
   transition: all 0.5s;
-  font-size: 1.1rem;
-  &::hover {
+  font-size: 1rem;
+  &:hover {
     background-color: cyan;
     color: black;
   }
 `;
+
+export const ButtonRand = styled.button`
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: ${(props)=>props.Background};
+  color: black;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+  font-weight:bold;
+  &:hover {
+    background-color: blue;
+    color: #c1c1c1;
+  }
+`;
+
 export const Label = styled.label`
   font-size: 0.9rem;
 `;

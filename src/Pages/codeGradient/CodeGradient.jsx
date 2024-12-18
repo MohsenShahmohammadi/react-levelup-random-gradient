@@ -1,12 +1,12 @@
 import React from "react";
-import { CodeGradi } from "./style.js";
+import { CodeGradi,Code } from "./style.js";
 
 const CodeGradient = ({text}) => {
   return (
     <>
-      <div className="code-gradient">
-        <CodeGradi>{text}</CodeGradi>
-      </div>
+      <CodeGradi>
+        <Code>{text}</Code>
+      </CodeGradi>
     </>
   );
 };
